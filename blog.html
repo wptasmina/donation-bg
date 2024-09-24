@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        	    <!----Tailwind-css-CDN-->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+      <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            btn_bg: 'rgb(180, 244, 97);',
+            secText: '#111111',
+            sec_P_Text: 'rgba(17, 17, 17, 0.7)',
+            border_cl: '1px solid rgba(17, 17, 17, 0.1)'
+          },
+          fontFamily: {
+            'fontLexend': ['"Lexend", sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <header class=" sticky top-0 border-b border-gray-200 shadow"></header>
+    <!-- navbar -->
+    <nav class="bg-nav_bg py-2">
+    <div class="navbar container mx-auto">
+        <div class="navbar-start p-0 m-0">
+    <a href="./index.html" class="text-lg py-3 text-black font-bold bg-btn_bg px-8 rounded-md">Home</a>
+  </div>
+
+  <div class="navbar-center hidden lg:flex">
+    <img class="w-10 p-2" src="./image/logo.png" alt="logo">
+    <h2 class="text-lg text-black font-bold">Donate Bangladesh</h2>
+  </div>
+
+  <div class="navbar-end inline-flex gap-1">
+    <img class="w-5" src="./image/coin.png" alt="coin">
+    <p class="text-md text-sec_P_Text font-bold"><span id="main_amount">9200</span> BDT</p>
+  </div>
+</div>
+</nav>
+    <!-- navbar End-->
+</header>
+
+</body>
+</html>
