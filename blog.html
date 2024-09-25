@@ -12,6 +12,7 @@
       theme: {
         extend: {
           colors: {
+            nav_bg: '#F9F7F3',
             btn_bg: 'rgb(180, 244, 97);',
             secText: '#111111',
             sec_P_Text: 'rgba(17, 17, 17, 0.7)',
@@ -27,7 +28,7 @@
 </head>
 <body>
 
-  <header class=" sticky top-0 border-b border-gray-200 shadow"></header>
+  <header class="sticky top-0 border-b border-gray-200 shadow z-50">
     <!-- navbar -->
     <nav class="bg-nav_bg py-2">
     <div class="navbar container mx-auto">
@@ -48,6 +49,49 @@
 </nav>
     <!-- navbar End-->
 </header>
+
+<main class="bg-white">
+
+  <div class="container mx-auto p-0 lg:px-0 px-4">
+
+    <h1 class="text-4xl text-black font-bold py-6">FAQ 💬</h1>
+
+  <div class="border border-gray-100 collapse collapse-arrow bg-base-100 rounded-none">
+  <input type="radio" name="my-accordion-2" checked="checked" />
+  <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM) ?</div>
+  <div class="collapse-content">
+    <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document's structure, style, and content. DOM represents documents as nodes and objects; In this way, the programming language can interact with the page.</p>
+  </div>
+</div>
+<div class="border border-gray-100 collapse collapse-arrow bg-base-100 rounded-none">
+  <input type="radio" name="my-accordion-2" />
+  <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+  <div class="collapse-content">
+    <p>1. Introduction.
+       2. Understanding the DOM as an Object Hierarchy.
+       3. Use an ID to Select an Element with .getElementById()
+       4. Use a CSS Selector to Select an Element with .querySelector()
+       5. Use a CSS Selector to Select Multiple Elements with .querySelectorAll()
+       6. Other Ways to Select Elements.
+      </p>
+  </div>
+</div>
+<div class="collapse collapse-arrow bg-base-100 border border-gray-100 rounded-none">
+  <input type="radio" name="my-accordion-2" />
+  <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+  <div class="collapse-content">
+    <p>Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated. It allows us to attach a single event listener for elements that exist now or in the future.</p>
+  </div>
+</div>
+<div class="collapse collapse-arrow bg-base-100 border border-gray-100 rounded-none">
+  <input type="radio" name="my-accordion-2" />
+  <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes amd styles using the DOM?</div>
+  <div class="collapse-content">
+    <p>If you want to change other attributes like id , href , or src , you can use the setAttribute() method. The setAttribute() method accepts two arguments: The name of the attribute to set. The value of the attribute to set.</p>
+  </div>
+</div>
+  </div>
+</main>
 
 </body>
 </html>
