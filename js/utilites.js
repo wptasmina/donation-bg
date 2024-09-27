@@ -17,24 +17,34 @@ function showError(id){
 // PouPUP Button 
 function poppupBtn(){
   
-document
-    .getElementById("poppup-btn")
-    .classList.remove("hidden");
+let poppup = document
+    .getElementById("poppup-btn");
+    poppup.classList.remove("hidden");
+    poppup.classList.add("flex");
 
 }
+// PouPUP Button 
+// function porpupContainer(){
+  
+// document.getElementById("porpup-container").classList.remove("hidden");
 
-// create div-Element Add To History
-function addToHistory(totleExpense) {
+// }
+
+// createElement New-div Add To History Button
+function addToHistory(totleExpense, title) {
         const historyItem = document.createElement("div");
         historyItem.className =
           "bg-white p-6 rounded-lg shadow border border-gray-200";
+
         historyItem.innerHTML = `
-        <h2 class= "text-lg pb-4 text-black font-bold">${totleExpense.toFixed(
+        <h2 class= "lg:text-lg text-sm pb-4 text-black font-bold">${totleExpense.toFixed(
           2
         )}  
-          Taka is Donated for famine-2024 at Noakhali, Bangladesh
+
+          ${title}
+        
         </h2>
-      <p class= "text-md text-gray-600 font-semibold">${new Date().toLocaleString()}</p>
+      <p class= "lg:text-md text-sm text-gray-600 font-semibold">${new Date().toLocaleString()}</p>
     `;
         const historyContainer = document.getElementById("history-list");
         historyContainer.insertBefore(historyItem, historyContainer.firstChild);

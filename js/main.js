@@ -1,5 +1,12 @@
+// function number(id){
+//   const abc = document.getElementById(id)
+//   const xyz = abc.innerText
+//   return xyz
+// }
+// const donet = number("donte-bd");
+// console.log(donet)
 
-
+// lood at Noakhali, Bangladesh
 document
   .getElementById("donate_now_btn")
   .addEventListener("click", function () {
@@ -8,7 +15,6 @@ document
     const mainBalance = getTextValueById("main_balance");
 
     if (addManyInput <= 0 || isNaN(addManyInput)) {
-      // document.getElementById("income-error").classList.remove("hidden");
       showError("income-error");
       return;
     }
@@ -27,7 +33,7 @@ document
     const totleExpense = mainBalance - expenseAmount;
 
     document.getElementById("add-donate_input").value = "";
-    addToHistory(totleExpense);
+    addToHistory(totleExpense, "Donate for Flood at Noakhali, Bangladesh");
 
     poppupBtn("donate_now_btn");
     
@@ -39,6 +45,7 @@ document
  popputButton.addEventListener("click", function () {
     popputcontainer.classList.add("hidden");
  });
+
 // Donation & History - button)
 const historyTab = document.getElementById("history-tab");
 const donateTab = document.getElementById("donate_tab");
@@ -57,7 +64,6 @@ historyTab.addEventListener("click", function () {
 
 });
 
-// Donation Button
 donateTab.addEventListener("click", function () {
   donateTab.classList.add("text-black", "bg-btn_bg");
 
@@ -70,7 +76,7 @@ donateTab.addEventListener("click", function () {
 
 });
 
- // lood at Noakhali, Bangladesh
+ // lood at Feny, Bangladesh
 document.getElementById("donate-finy").addEventListener("click", function () {
   const addAmpuntInput = getInputValueById("add-amount-input");
   const donationAmount = getTextValueById("donation_amount");
@@ -95,7 +101,7 @@ document.getElementById("donate-finy").addEventListener("click", function () {
   const totleExpense = balance - mainBalanceExpense;
 
   document.getElementById("add-amount-input").value = "";
-  addToHistory(totleExpense);
+  addToHistory(totleExpense, "Donate for Flood Relief in Feni,Bangladesh");
   poppupBtn("donate-finy");
 });
 
@@ -126,7 +132,7 @@ document
     const totleExpense = balanceMain - mainBalanceExpenses;
 
     document.getElementById("input-add-movement").value = "";
-    addToHistory(totleExpense);
+    addToHistory(totleExpense, "Aid for Injured in the Quota Movement");
 
     poppupBtn("add-quota-movement");
   });
@@ -158,7 +164,7 @@ document
     const totleExpense = balanceMain - mainBalanceExpenses;
 
     document.getElementById("donate-flood-input").value = "";
-    addToHistory(totleExpense);
+    addToHistory(totleExpense, "Donate for Flood Relief in Sylhet,Bangladesh");
 
     poppupBtn("donate-flood-btn");
   });
