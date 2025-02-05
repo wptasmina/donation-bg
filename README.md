@@ -1,8 +1,7 @@
- 
 
-  # Flat Donation BG 🎗️
- ![Donation_page](https://github.com/user-attachments/assets/8b62111a-0320-47f7-817b-4485ade9a389)
+# Flat Donation BG 🎗️
 
+![Donation_page](https://github.com/user-attachments/assets/8b62111a-0320-47f7-817b-4485ade9a389)
 
 🔗 **Live Link:** [Flat Donation BG](https://wptasmina.github.io/donation-bg)
 
@@ -26,4 +25,3 @@ Flat Donation BG is a modern, responsive, and user-friendly donation platform bu
 1. **Clone the Repository:**  
    ```bash
    git clone https://github.com/wptasmina/donation-bg.git
-
